@@ -1,0 +1,728 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Takläggning Stockholm</title>
+<meta name="theme-color" content="#111111">
+<link rel="canonical" href="https://www.dittforetag.se/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:title" content="Takläggning i stora delar av Sverige – Företagsnamn">
+<meta property="og:description" content="Nytt tak, byte av råspont, rännor, snörasskydd och mossbehandling. Fri offert.">
+<meta property="og:url" content="https://www.dittforetag.se/">
+<style>
+:root{
+  --orange:#F26A1B; --orange-dark:#d95a10;
+  --black:#111111; --ink:#1c1c1c; --grey:#f4f4f2; --line:#e3e3df; --white:#fff;
+  --radius:14px; --max:1160px;
+}
+*,*::before,*::after{box-sizing:border-box}
+body *{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--orange);color:#fff}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.eyebrow{color:var(--orange);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--black);color:#fff;border-bottom:3px solid var(--orange)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.2rem;letter-spacing:-.02em}
+.logo-mark{width:38px;height:38px;background:var(--orange);clip-path:polygon(50% 0,100% 55%,88% 55%,88% 100%,12% 100%,12% 55%,0 55%)}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--orange)}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.nav-phone{font-weight:800}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+
+/* hero */
+/* Hero: byt till ett riktigt foto genom att sätta --hero-img:url(hero.jpg) */
+.hero{background:linear-gradient(90deg,rgba(17,17,17,.92),rgba(17,17,17,.74) 55%,rgba(17,17,17,.4)),var(--hero-img,none) center/cover no-repeat,var(--black);color:#fff;position:relative;overflow:hidden;padding:120px 0 130px}
+.hero h1 strong{display:block;font-weight:900;text-transform:uppercase;color:var(--orange);letter-spacing:-.01em}
+.hero h1{font-weight:600}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.3rem,5.5vw,4.2rem);max-width:760px;margin:14px 0 20px}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:1.15rem;max-width:560px;color:#d9d9d9;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px}
+.hero-badges{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:48px;font-weight:600;font-size:.95rem}
+.hero-badges li{list-style:none;display:flex;align-items:center;gap:8px}
+.hero-badges li::before{content:"✓";display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--orange);color:#fff;font-size:.8rem}
+
+/* sections */
+section{padding:88px 0}
+.section-head{max-width:640px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:8px 0 12px}
+.section-head p{color:#555}
+
+/* services */
+.grid{display:grid;gap:22px}
+.services{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.2s;position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--orange);transition:.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.09)}
+.card:hover::after{width:100%}
+.icon{width:54px;height:54px;border-radius:12px;background:var(--black);display:grid;place-items:center;margin-bottom:18px}
+.icon svg{width:28px;height:28px;stroke:var(--orange);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{color:#555;font-size:.97rem}
+
+/* services: tvåkolumnslista med linjeikoner */
+.grid.services{grid-template-columns:1fr 1fr;column-gap:64px;row-gap:0}
+.grid.services .card{display:grid;grid-template-columns:auto 1fr;column-gap:18px;row-gap:4px;align-items:start;border:0;border-bottom:1px solid var(--line);border-radius:0;background:none;padding:26px 0;overflow:visible}
+.grid.services .card::after{display:none}
+.grid.services .card:hover{transform:none;box-shadow:none}
+.grid.services .icon{grid-row:span 2;width:44px;height:44px;margin:0;background:none;border-radius:0}
+.grid.services .icon svg{width:36px;height:36px;stroke-width:1.7}
+.grid.services .card h3{margin:0}
+@media (max-width:760px){.grid.services{grid-template-columns:1fr}}
+
+/* varför välja oss */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.why-item{border-top:4px solid var(--orange);padding-top:18px}
+.why-item h3{font-size:1.1rem;margin-bottom:6px}
+.why-item p{color:#555;font-size:.95rem}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* CTA-band */
+.cta-band{background:var(--orange);color:#fff;padding:64px 0}
+.cta-band .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px}
+.cta-band h2{font-size:clamp(1.7rem,3.4vw,2.4rem)}
+.cta-band p{margin-top:6px;max-width:520px}
+.btn-dark{background:var(--black);color:#fff}
+.btn-dark:hover{background:#000;transform:translateY(-1px)}
+
+/* text som glider in från sidan vid scroll (aktiveras av JS via .anim) */
+main{overflow-x:clip}
+.anim .rv{opacity:0;transform:translateX(-72px);transition:opacity .7s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.anim .rv.from-r{transform:translateX(72px)}
+.anim .rv.in{opacity:1;transform:none}
+@media (max-width:760px){.anim .rv,.anim .rv.from-r{transform:translateY(24px)}}
+.anim .rv.in,.anim .rv.from-r.in{opacity:1;transform:none}
+
+/* process */
+.dark{background:var(--black);color:#fff}
+.dark .section-head p{color:#bbb}
+.steps{grid-template-columns:repeat(4,1fr);counter-reset:s}
+.step{border-top:3px solid var(--orange);padding-top:20px;counter-increment:s}
+.step::before{content:"0" counter(s);font-size:2.4rem;font-weight:900;color:var(--orange);display:block;margin-bottom:6px}
+.step h3{font-size:1.1rem;margin-bottom:6px}
+.step p{color:#bbb;font-size:.95rem}
+
+/* areas */
+.cities{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.city{background:var(--grey);border:1px solid var(--line);border-top:4px solid var(--orange);border-radius:var(--radius);padding:26px}
+.city h3{font-size:1.4rem;margin-bottom:14px}
+.city .chip{background:#fff}
+.rural{margin-top:22px;background:var(--black);color:#fff;border-radius:var(--radius);border-left:6px solid var(--orange);padding:28px}
+.rural h3{font-size:1.4rem;margin-bottom:8px}
+.rural p{color:#ccc;margin-bottom:16px;max-width:620px}
+.rural .chip{background:transparent;border-color:#555;color:#fff}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--grey);border:1px solid var(--line);padding:9px 16px;border-radius:999px;font-weight:600;font-size:.95rem}
+.hours{background:var(--orange);color:#fff;border-radius:var(--radius);padding:38px}
+.hours h3{font-size:1.5rem;margin-bottom:10px}
+.hours .big{font-size:2.6rem;font-weight:900;letter-spacing:-.03em}
+
+/* projects */
+.projects{grid-template-columns:repeat(3,1fr)}
+.ph{aspect-ratio:4/3;border-radius:var(--radius);background:repeating-linear-gradient(45deg,#1b1b1b,#1b1b1b 14px,#222 14px,#222 28px);display:grid;place-items:center;color:#777;font-weight:700;border:1px solid #2c2c2c}
+
+/* before/after slider */
+.ba{position:relative;overflow:hidden;background:#222;--pos:50%;user-select:none;aspect-ratio:4/3}
+.ba-layer{position:absolute;inset:0}
+.ba-layer svg{width:100%;height:100%}
+.ba-after{clip-path:inset(0 0 0 var(--pos))}
+.ba-line{position:absolute;top:0;bottom:0;left:var(--pos);width:3px;margin-left:-1.5px;background:#fff;box-shadow:0 0 8px rgba(0,0,0,.4);pointer-events:none}
+.ba-line i{position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:var(--orange);border:3px solid #fff;display:grid;place-items:center;color:#fff;font-style:normal;font-weight:900;font-size:.9rem;letter-spacing:-2px}
+.ba-line i::before{content:"◂▸"}
+.ba-tag{position:absolute;top:12px;padding:4px 12px;border-radius:999px;background:rgba(0,0,0,.7);color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;pointer-events:none;z-index:2}
+.ba-tag.l{left:12px}.ba-tag.r{right:12px;background:var(--orange)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:ew-resize;appearance:none;-webkit-appearance:none;touch-action:pan-y;z-index:3}
+.ba input::-webkit-slider-thumb{-webkit-appearance:none;width:1px;height:100vh}
+.ba input::-moz-range-thumb{width:1px;height:100vh;border:0}
+.ba:focus-within{outline:3px solid var(--orange);outline-offset:-3px}
+
+/* book */
+.book-stage{max-width:900px;margin:0 auto}
+.book{position:relative;width:min(860px,100%);aspect-ratio:1.45/1;margin:0 auto;perspective:2400px;transition:transform .7s cubic-bezier(.4,.1,.2,1)}
+.book[data-state="closed"]{transform:translateX(-25%)}
+.book[data-state="end"]{transform:translateX(25%)}
+.leaf{position:absolute;left:50%;top:0;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.4,.1,.2,1)}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;display:flex;flex-direction:column;color:var(--ink);box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.face.front{border-radius:0 12px 12px 0;background:linear-gradient(90deg,#d9d4c7,#faf8f3 7%)}
+.face.back{border-radius:12px 0 0 12px;transform:rotateY(180deg);background:linear-gradient(270deg,#d9d4c7,#faf8f3 7%)}
+.face.cover{background:var(--black);color:#fff;border:3px solid var(--orange);cursor:pointer;justify-content:center;align-items:center;text-align:center;padding:30px;gap:12px}
+.face.cover h3{font-size:2rem}
+.face.cover .logo-mark{width:64px;height:64px}
+.face.cover small{color:#aaa}
+.pg-info{padding:36px 32px;display:flex;flex-direction:column;gap:12px;height:100%}
+.pg-info h3{font-size:1.5rem}
+.pg-info p{color:#555;font-size:.95rem}
+.facts{margin-top:auto;display:grid;gap:8px;border-top:2px solid var(--orange);padding-top:14px;font-size:.9rem}
+.facts div{display:flex;justify-content:space-between;gap:10px}
+.facts dt{color:#777}.facts dd{font-weight:700}
+.pg-slider{display:flex;flex-direction:column;height:100%;padding:24px 22px;gap:12px;justify-content:center}
+.pg-slider .ba{border-radius:10px}
+.pg-slider small,.demo-note{color:#888;font-size:.78rem;text-align:center}
+.pg-end{padding:36px 32px;display:flex;flex-direction:column;justify-content:center;gap:14px;height:100%}
+.pg-end h3{font-size:1.6rem}
+.book-ctrl{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:30px;color:#bbb;font-weight:600}
+.book-ctrl button{width:48px;height:48px;border-radius:50%;border:2px solid var(--orange);background:none;color:#fff;font-size:1.2rem;cursor:pointer;transition:.2s}
+.book-ctrl button:hover:not(:disabled){background:var(--orange)}
+.book-ctrl button:disabled{opacity:.3;cursor:default}
+.book-ctrl span{min-width:150px;text-align:center}
+.cards{display:none}
+.pcard{background:#fff;color:var(--ink);border-radius:var(--radius);overflow:hidden}
+.pc-body{padding:20px;display:grid;gap:6px}
+.pc-body p{color:#555;font-size:.95rem}
+
+/* contact */
+.contact{background:var(--grey)}
+.contact-box{display:grid;grid-template-columns:5fr 6fr;gap:48px}
+.contact-info h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:8px 0 16px}
+.contact-info ul{list-style:none;margin-top:26px;display:grid;gap:14px}
+.contact-info li strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--orange)}
+form{background:#fff;border-radius:var(--radius);padding:34px;border:1px solid var(--line);display:grid;gap:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-weight:700;font-size:.88rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;background:#fff;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 3px rgba(242,106,27,.18)}
+textarea{min-height:110px;resize:vertical}
+.consent{display:flex;gap:10px;align-items:flex-start;font-weight:500;font-size:.85rem;color:#555}
+.consent input{width:auto;margin-top:4px}
+.form-ok,.form-err{display:none;padding:14px;border-radius:10px;font-weight:600}
+.form-ok{background:#e9f7ec;color:#1d6b33}
+.form-err{background:#fdeceb;color:#a3261c}
+.form-title{font-size:1.5rem}
+.form-sub{color:#666;margin-top:-8px}
+.chips-label{display:block;font-weight:700;font-size:.88rem;margin-bottom:8px}
+.pick{display:flex;flex-wrap:wrap;gap:8px}
+.pick label{display:block}
+.pick input{position:absolute;opacity:0;width:0;height:0}
+.pick span{display:block;padding:10px 16px;border:1.5px solid var(--line);border-radius:999px;font-weight:600;font-size:.92rem;cursor:pointer;transition:.15s;background:#fff}
+.pick input:checked+span{background:var(--orange);border-color:var(--orange);color:#fff}
+.pick input:focus-visible+span{outline:3px solid var(--black);outline-offset:2px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.legal{font-size:.78rem;color:#777}
+.quick{display:grid;gap:12px;margin-top:26px}
+.quick-btn{display:flex;align-items:center;gap:14px;padding:14px 18px;background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);font-weight:800;transition:.2s}
+.quick-btn:hover{border-color:var(--orange);transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.quick-btn svg{width:30px;height:30px;flex:none}
+.quick-btn small{display:block;font-weight:500;color:#666;font-size:.8rem}
+.quick-btn.wa{background:#25D366;border-color:#25D366;color:#fff}
+.quick-btn.wa small{color:#eafff1}
+.quick-btn.wa:hover{background:#1ebe5a;border-color:#1ebe5a}
+
+/* footer */
+footer{background:var(--black);color:#aaa;padding:36px 0;font-size:.9rem;border-top:3px solid var(--orange)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+/* faq */
+.faq-box{display:grid;grid-template-columns:5fr 6fr;gap:48px;align-items:start}
+.faq{display:grid;gap:10px}
+.faq details{border:1.5px solid var(--line);border-radius:var(--radius);background:#fff;transition:.15s}
+.faq details[open]{border-color:var(--orange)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:700;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:var(--orange);font-weight:400}
+.faq details[open] summary::after{content:"–"}
+.faq summary:focus-visible{outline:3px solid var(--orange);outline-offset:2px;border-radius:var(--radius)}
+.faq details p{padding:0 20px 18px;color:#555}
+
+/* privacy dialog + footer link */
+.linkbtn{background:none;border:0;color:inherit;font:inherit;text-decoration:underline;cursor:pointer;padding:0}
+.linkbtn:hover{color:var(--orange)}
+dialog{border:0;border-radius:var(--radius);padding:0;max-width:640px;width:calc(100% - 32px);max-height:85vh;color:var(--ink);background:#fff}
+dialog::backdrop{background:rgba(0,0,0,.65)}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 24px;border-bottom:3px solid var(--orange);position:sticky;top:0;background:#fff}
+.dlg-head .linkbtn{color:var(--ink)}
+.dlg-body{padding:20px 24px 28px;display:grid;gap:10px;overflow:auto;max-height:calc(85vh - 70px)}
+.dlg-body h3{font-size:1rem;margin-top:8px}
+.dlg-body p{color:#444;font-size:.95rem}
+
+/* floating call button (mobile) */
+.fab{display:none;position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));left:12px;z-index:60;gap:10px}
+.fab a{flex:1;text-align:center;background:var(--orange);color:#fff;font-weight:800;padding:14px 10px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.fab .fab-wa{background:#25D366}
+
+@media (max-width:900px){
+  .services,.projects{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .contact-box,.faq-box{grid-template-columns:1fr}
+  nav{position:absolute;top:72px;left:0;right:0;background:var(--black);display:none;padding:20px;border-bottom:3px solid var(--orange)}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:16px}
+  .menu-toggle{display:block}
+  .nav-phone{display:none}
+  .fab{display:flex}
+  body{padding-bottom:76px}
+  .book-stage{display:none}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+}
+@media (max-width:560px){
+  section{padding:60px 0}
+  .nav{gap:8px}
+  .nav-cta{gap:10px}
+  .nav-cta .btn{padding:10px 16px;font-size:.9rem;white-space:nowrap}
+  .logo{font-size:1.05rem;min-width:0}
+  .nav{height:64px}
+  nav{top:64px}
+  .logo-mark{width:30px;height:30px;flex:none}
+  .hero-actions .btn{flex:1 1 100%;justify-content:center}
+  .services,.projects,.steps,.row,.cards,.cities{grid-template-columns:1fr}
+  .hero{padding:64px 0 80px}
+}
+</style>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="logo-mark"></span>Företagsnamn</a>
+    <nav id="nav">
+      <ul>
+        <li><a href="#tjanster">Tjänster</a></li>
+        <li><a href="#process">Så jobbar vi</a></li>
+        <li><a href="#omrade">Område</a></li>
+        <li><a href="#projekt">Projekt</a></li>
+        <li><a href="#faq">Vanliga frågor</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+46000000000">08-000 00 00</a>
+      <a class="btn btn-primary" href="#kontakt">Fri offert</a>
+      <button class="menu-toggle" id="toggle" aria-label="Meny">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Takläggning i stora delar av Sverige</span>
+      <h1>Ett tak du kan lita på<strong>i alla väder.</strong></h1>
+      <p>Nytt tak, byte av råspont, rännor, snörasskydd och mossbehandling. Ordentligt utfört av erfarna takläggare, i städerna och ute på landsbygden.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#kontakt">Boka kostnadsfri offert</a>
+        <a class="btn btn-ghost" href="#tjanster">Våra tjänster</a>
+      </div>
+      <ul class="hero-badges">
+        <li>Fri offert</li>
+        <li>Snabb respons</li>
+        <li>Garanti på utfört arbete</li>
+        <li>Öppet mån–lör 07:00–18:00</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="tjanster">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Tjänster</span>
+        <h2>Allt för ditt tak på ett ställe</h2>
+        <p>Från nytt takläggningsarbete till löpande underhåll – vi tar hand om hela taket.</p>
+      </div>
+      <div class="grid services">
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 12 12 4l9 8"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3>Nytt tak med takpannor</h3>
+          <p>Komplett takläggning med tegel- eller betongpannor. Hållbart, snyggt och byggt för svenskt klimat.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 10h18M3 15h18M9 5v5M15 10v5M9 15v4"/></svg></div>
+          <h3>Byte av råspont</h3>
+          <p>Fuktskadad eller murken råspont byts ut helt, så att taket får ett stabilt och tätt underlag.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 12h18M12 5v14"/><path d="M14.5 14.5l3 3"/></svg></div>
+          <h3>Partiellt byte av råspont</h3>
+          <p>Är skadan lokal byter vi bara de delar som behövs – det sparar både tid och pengar.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 6h18v4H3z"/><path d="M19 10v7a2 2 0 0 1-2 2h-1"/><path d="M12 14c1 1.5 1.5 2.2 1.5 3a1.5 1.5 0 0 1-3 0c0-.8.5-1.5 1.5-3z"/></svg></div>
+          <h3>Hängrännor & stuprör</h3>
+          <p>Montering och byte av takrännor och stuprör som leder bort vattnet från fasad och grund.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M2 14 12 6l10 8"/><path d="M6 14v-1M10 14v-1M14 14v-1M18 14v-1"/><path d="M2 18h20"/></svg></div>
+          <h3>Snörasskydd</h3>
+          <p>Säkra snörasskydd som skyddar människor, bilar och entréer när snön glider av taket.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-6 6-10z"/><path d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5"/></svg></div>
+          <h3>Rengöring av mossa & mögel</h3>
+          <p>Vi tar bort mossa, alger och mögel och behandlar taket så att det håller längre.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="varfor" style="background:var(--grey)">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Varför välja oss?</span>
+        <h2>Ett tak ska vara tryggt att beställa</h2>
+      </div>
+      <div class="why">
+        <div class="why-item"><h3>Tydlig offert utan kostnad</h3><p>Du vet priset innan något arbete börjar.</p></div>
+        <div class="why-item"><h3>Ärlig prissättning</h3><p>Inga dolda kostnader eller överraskningar på fakturan.</p></div>
+        <div class="why-item"><h3>Vi håller tidsplanen</h3><p>Tidsplanen står i offerten och vi håller den.</p></div>
+        <div class="why-item"><h3>Garanti på arbetet</h3><p>Vi står för det vi gör. Villkoren står i offerten.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Så jobbar vi</span>
+        <h2>Enkelt från första samtal till färdigt tak</h2>
+      </div>
+      <div class="grid steps">
+        <div class="step"><h3>Kontakt</h3><p>Du ringer eller fyller i formuläret. Vi återkommer snabbt.</p></div>
+        <div class="step"><h3>Besiktning & offert</h3><p>Vi tittar på taket och ger dig ett tydligt pris.</p></div>
+        <div class="step"><h3>Utförande</h3><p>Vårt team utför arbetet noggrant och håller tidsplanen.</p></div>
+        <div class="step"><h3>Slutkontroll</h3><p>Vi städar, går igenom resultatet med dig och ger garanti.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="omrade">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Arbetsområde</span>
+        <h2>Vi arbetar i stora delar av Sverige</h2>
+        <p>Vi finns i Stockholm, Malmö, Göteborg och Linköping, och vi åker gärna ut till orterna runt omkring och ute på landet.</p>
+      </div>
+      <div class="cities">
+        <article class="city">
+          <h3>Stockholm</h3>
+          <div class="chips">
+            <span class="chip">Södermalm</span><span class="chip">Kungsholmen</span><span class="chip">Östermalm</span>
+            <span class="chip">Norrmalm</span><span class="chip">Liljeholmen</span><span class="chip">Hägersten</span>
+            <span class="chip">Älvsjö</span><span class="chip">Årsta</span><span class="chip">Enskede</span>
+            <span class="chip">Farsta</span><span class="chip">Skarpnäck</span><span class="chip">Skärholmen</span>
+          </div>
+        </article>
+        <article class="city">
+          <h3>Malmö</h3>
+          <div class="chips">
+            <span class="chip">Centrum</span><span class="chip">Västra Hamnen</span><span class="chip">Limhamn</span>
+            <span class="chip">Hyllie</span><span class="chip">Fosie</span><span class="chip">Kirseberg</span>
+            <span class="chip">Rosengård</span><span class="chip">Oxie</span>
+          </div>
+        </article>
+        <article class="city">
+          <h3>Göteborg</h3>
+          <div class="chips">
+            <span class="chip">Centrum</span><span class="chip">Majorna</span><span class="chip">Linné</span>
+            <span class="chip">Örgryte</span><span class="chip">Askim</span><span class="chip">Frölunda</span>
+            <span class="chip">Hisingen</span><span class="chip">Angered</span>
+          </div>
+        </article>
+        <article class="city">
+          <h3>Linköping</h3>
+          <div class="chips">
+            <span class="chip">Centrum</span><span class="chip">Ryd</span><span class="chip">Johannelund</span>
+            <span class="chip">Skäggetorp</span><span class="chip">Berga</span><span class="chip">Tannefors</span>
+          </div>
+        </article>
+      </div>
+      <div class="rural">
+        <h3>Även utanför städerna</h3>
+        <p>Villa på landet, sommarstuga eller gård? Vi kommer ut dit du bor, i hela länen runt våra städer och längre bort.</p>
+        <div class="chips">
+          <span class="chip">Stockholms län</span><span class="chip">Skåne</span><span class="chip">Västra Götaland</span>
+          <span class="chip">Östergötland</span><span class="chip">Övriga Sverige – fråga oss</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projekt" class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Projekt</span>
+        <h2>Bläddra i vår portfölj</h2>
+        <p>Dra i reglaget för att se taket före och efter.</p>
+      </div>
+      <div class="book-stage" id="bookStage">
+        <div class="book" id="book" data-state="closed"></div>
+        <div class="book-ctrl">
+          <button type="button" id="prev" aria-label="Föregående sida">←</button>
+          <span id="pg" aria-live="polite"></span>
+          <button type="button" id="next" aria-label="Nästa sida">→</button>
+        </div>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap faq-box">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Vanliga frågor</span>
+        <h2>Bra att veta innan du bestämmer dig</h2>
+        <p>Hittar du inte svaret? Skriv till oss på WhatsApp så svarar vi.</p>
+      </div>
+      <div class="faq">
+        <details><summary>Vad kostar ett nytt tak?</summary><p>Priset beror på takets yta och lutning, valt material och hur mycket underlaget behöver åtgärdas. Därför tittar vi på taket först och ger en tydlig offert utan kostnad.</p></details>
+        <details><summary>Hur lång tid tar arbetet?</summary><p>För en villa handlar det oftast om några dagar, men det beror på takets storlek, omfattning och vädret. Du får en tidsplan i offerten.</p></details>
+        <details><summary>Måste jag vara hemma under arbetet?</summary><p>Oftast inte. Vi behöver bara komma åt taket och tomten. Vi stämmer av detaljerna med dig innan vi börjar.</p></details>
+        <details><summary>Vad är skillnaden mellan helt och partiellt byte av råspont?</summary><p>Vid ett helt byte byts hela takets underlag. Vid ett partiellt byte åtgärdar vi bara de delar som är fuktskadade eller murkna. Vilken lösning som passar bedömer vi vid besiktningen.</p></details>
+        <details><summary>Hur ofta behöver taket tvättas från mossa?</summary><p>Det beror på läge, skugga och trädbestånd. Vi bedömer taket och säger om det behöver behandlas nu eller kan vänta.</p></details>
+        <details><summary>Lämnar ni garanti?</summary><p>Ja, vi lämnar garanti på utfört arbete. Villkoren står i offerten.</p></details>
+        <details><summary>Vilka områden arbetar ni i?</summary><p>Vi arbetar i Stockholm, Malmö, Göteborg och Linköping och i orterna runt omkring, både i städerna och på landsbygden. Bor du längre bort? Hör av dig så berättar vi om vi kan hjälpa dig.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div><h2>Går du i tak-tankar?</h2><p>Berätta vad som behöver göras så återkommer vi med en tydlig offert.</p></div>
+      <a class="btn btn-dark" href="#kontakt">Boka kostnadsfri offert</a>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap contact-box">
+      <div class="contact-info">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Få en fri offert</h2>
+        <p style="color:#555">Det snabbaste sättet: skriv till oss på WhatsApp och skicka ett par bilder på taket. Eller lämna ditt nummer så ringer vi upp.</p>
+        <div class="quick">
+          <a class="quick-btn wa" id="waBtn" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg><span>Skriv på WhatsApp<small>Snabbast – skicka gärna bilder</small></span></a>
+          <a class="quick-btn" id="telBtn" href="tel:+46000000000"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>Ring oss<small>08-000 00 00 · mån–lör 07:00–18:00</small></span></a>
+          <a class="quick-btn" id="mailBtn" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Skicka e-post<small>info@foretagsnamn.se</small></span></a>
+        </div>
+        <ul>
+          <li><strong>Telefon</strong>08-000 00 00</li>
+          <li><strong>E-post</strong>info@foretagsnamn.se</li>
+          <li><strong>Adress</strong>Gatan 1, 000 00 Stockholm</li>
+          <li><strong>Öppettider</strong>Mån–lör 07:00–18:00</li>
+        </ul>
+      </div>
+      <form id="form">
+        <h3 class="form-title">Vill du bli uppringd?</h3>
+        <p class="form-sub">Bara ett telefonnummer – vi ringer upp dig.</p>
+        <label>Telefonnummer<input name="phone" type="tel" required autocomplete="tel" inputmode="tel" placeholder="070-000 00 00"></label>
+        <div>
+          <span class="chips-label">Vad gäller det? (valfritt)</span>
+          <div class="pick" id="pick">
+            <label><input type="radio" name="service" value="Nytt tak"><span>Nytt tak</span></label>
+            <label><input type="radio" name="service" value="Byte av råspont"><span>Råspont</span></label>
+            <label><input type="radio" name="service" value="Rännor"><span>Rännor</span></label>
+            <label><input type="radio" name="service" value="Snörasskydd"><span>Snörasskydd</span></label>
+            <label><input type="radio" name="service" value="Mossa & mögel"><span>Mossa & mögel</span></label>
+            <label><input type="radio" name="service" value="Annat / vet ej"><span>Vet ej</span></label>
+          </div>
+        </div>
+        <label>Namn och stadsdel (valfritt)<input name="name" autocomplete="name" placeholder="t.ex. Anna, Södermalm"></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-primary" type="submit">Ring upp mig</button>
+        <p class="legal">Genom att skicka godkänner du att vi kontaktar dig om din förfrågan. Vi sparar inte uppgifterna längre än nödvändigt.</p>
+        <div class="form-ok" id="ok">Tack! Vi ringer upp dig så snart vi kan.</div>
+        <div class="form-err" id="err">Något gick fel. Skriv till oss på WhatsApp eller ring så hjälper vi dig direkt.</div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© <span id="year"></span> Företagsnamn · Org.nr 000000-0000</span>
+    <span>Takläggning i stora delar av Sverige · <button type="button" class="linkbtn" id="openPrivacy">Integritetspolicy</button></span>
+  </div>
+</footer>
+
+<dialog id="privacy" aria-labelledby="privTitle">
+  <div class="dlg-head"><h2 id="privTitle">Integritetspolicy</h2><button type="button" class="linkbtn" id="closePrivacy" aria-label="Stäng">Stäng ✕</button></div>
+  <div class="dlg-body">
+    <p><strong>Personuppgiftsansvarig:</strong> Företagsnamn, Org.nr 000000-0000, info@foretagsnamn.se.</p>
+    <h3>Vilka uppgifter vi samlar in</h3>
+    <p>När du fyller i formuläret sparar vi telefonnummer, eventuellt namn och stadsdel samt vilken tjänst du är intresserad av. Om du skriver till oss via WhatsApp, e-post eller SMS får vi de uppgifter du själv skickar.</p>
+    <h3>Varför</h3>
+    <p>Vi använder uppgifterna för att kontakta dig, besvara din förfrågan och lämna offert. Rättslig grund är vårt berättigade intresse att besvara förfrågningar du själv skickat in.</p>
+    <h3>Hur länge</h3>
+    <p>Vi sparar uppgifterna så länge det behövs för att hantera din förfrågan och därefter högst [antal] månader, om inte ett uppdrag kräver längre lagring (till exempel bokföring).</p>
+    <h3>Vem som får se dem</h3>
+    <p>Förfrågningar skickas till oss via tjänster vi anlitar, bland annat Telegram, Cloudflare och WhatsApp (Meta). Vi säljer inte dina uppgifter.</p>
+    <h3>Cookies</h3>
+    <p>Den här webbplatsen använder inga spårnings- eller analyscookies.</p>
+    <h3>Dina rättigheter</h3>
+    <p>Du har rätt att begära tillgång till, rättelse eller radering av dina uppgifter och att invända mot behandlingen. Kontakta oss på e-postadressen ovan. Du kan också klaga hos Integritetsskyddsmyndigheten (IMY).</p>
+  </div>
+</dialog>
+
+<div class="fab"><a href="#" class="fab-wa" id="fabWa" target="_blank" rel="noopener">WhatsApp</a><a href="tel:+46000000000" id="fabTel">📞 Ring</a></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "name": "Företagsnamn",
+  "url": "https://www.dittforetag.se/",
+  "telephone": "+46000000000",
+  "email": "info@foretagsnamn.se",
+  "address": {"@type": "PostalAddress", "streetAddress": "Gatan 1", "postalCode": "000 00", "addressLocality": "Stockholm", "addressCountry": "SE"},
+  "areaServed": [{"@type": "Country", "name": "Sverige"}, {"@type": "City", "name": "Stockholm"}, {"@type": "City", "name": "Malmö"}, {"@type": "City", "name": "Göteborg"}, {"@type": "City", "name": "Linköping"}],
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "07:00", "closes": "18:00"}],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Takläggning med takpannor"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Byte av råspont"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hängrännor och stuprör"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Snörasskydd"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rengöring av mossa och mögel"}}
+  ]
+}
+</script>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const nav = document.getElementById('nav');
+document.getElementById('toggle').addEventListener('click', () => nav.classList.toggle('open'));
+nav.addEventListener('click', e => { if (e.target.tagName === 'A') nav.classList.remove('open'); });
+/* ---------- Portfölj: bok + före/efter ---------- */
+const projects = [
+  {area:'Södermalm', title:'Nytt tak med takpannor', text:'Ett gammalt, genomfuktat tak ersattes med nya betongpannor, ny underlagspapp och snörasskydd.', facts:[['Tjänst','Takläggning'],['Tid','6 arbetsdagar'],['Område','Södermalm']]},
+  {area:'Hägersten', title:'Byte av råspont', text:'Murken råspont byttes ut och taket lades om med nya takpannor och nya hängrännor.', facts:[['Tjänst','Råspont + rännor'],['Tid','4 arbetsdagar'],['Område','Hägersten']]},
+  {area:'Enskede', title:'Mossa & mögel borttaget', text:'Taket rengjordes från mossa, alger och mögel och behandlades för ett längre skydd.', facts:[['Tjänst','Takvård'],['Tid','1 arbetsdag'],['Område','Enskede']]}
+];
+let uid = 0;
+function roof(after){
+  const u = ++uid;
+  const base = after ? '#b8481f' : '#6b5d52', dark = after ? '#8e3714' : '#4d423a';
+  const moss = after ? '' : '<g fill="#5f7a3a" opacity=".65"><ellipse cx="70" cy="190" rx="46" ry="16"/><ellipse cx="160" cy="150" rx="30" ry="11"/><ellipse cx="300" cy="170" rx="52" ry="18"/><ellipse cx="240" cy="230" rx="36" ry="12"/><ellipse cx="110" cy="245" rx="28" ry="10"/></g><rect x="205" y="120" width="26" height="16" fill="#2b2420"/><rect x="40" y="214" width="26" height="14" fill="#2b2420"/>';
+  const shine = after ? '<path d="M0 140L400 92" stroke="#fff" stroke-opacity=".25" stroke-width="3"/>' : '';
+  return `<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${after?'Efter':'Före'}">
+<defs><linearGradient id="s${u}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb4d6"/><stop offset="1" stop-color="#dbe8f2"/></linearGradient>
+<pattern id="t${u}" width="30" height="20" patternUnits="userSpaceOnUse"><rect width="30" height="20" fill="${base}"/><path d="M0 19h30" stroke="${dark}" stroke-width="2"/><path d="M15 0v19" stroke="${dark}" stroke-width="1.2" opacity=".7"/></pattern></defs>
+<rect width="400" height="300" fill="url(#s${u})"/>
+<rect x="296" y="30" width="36" height="70" fill="#8b4a3a"/><rect x="292" y="26" width="44" height="8" fill="#5a2f25"/>
+<polygon points="-10,300 -10,125 410,72 410,300" fill="url(#t${u})"/>
+${moss}${shine}
+<rect x="-10" y="268" width="420" height="12" fill="${after?'#222':'#8a7a6a'}"/>
+<rect x="-10" y="280" width="420" height="20" fill="#d8cdb8"/></svg>`;
+}
+function ba(){
+  return `<div class="ba"><div class="ba-layer">${roof(false)}</div><div class="ba-layer ba-after">${roof(true)}</div><span class="ba-tag l">Före</span><span class="ba-tag r">Efter</span><div class="ba-line"><i></i></div><input type="range" min="0" max="100" value="50" aria-label="Jämför före och efter"></div>`;
+}
+document.addEventListener('input', e => {
+  if (e.target.matches('.ba input')) e.target.closest('.ba').style.setProperty('--pos', e.target.value + '%');
+});
+const factsHTML = p => `<dl class="facts">${p.facts.map(f => `<div><dt>${f[0]}</dt><dd>${f[1]}</dd></div>`).join('')}</dl>`;
+const infoPage = (p, i) => `<div class="pg-info"><span class="eyebrow">Projekt 0${i+1} · ${p.area}</span><h3>${p.title}</h3><p>${p.text}</p>${factsHTML(p)}</div>`;
+const sliderPage = () => `<div class="pg-slider">${ba()}<small>Dra reglaget · Exempelbilder, ersätts med riktiga foton</small></div>`;
+const coverPage = `<div class="logo-mark" style="background:var(--orange);clip-path:polygon(50% 0,100% 55%,88% 55%,88% 100%,12% 100%,12% 55%,0 55%)"></div><span class="eyebrow">Portfölj</span><h3>Före &amp; efter</h3><small>Klicka för att bläddra →</small>`;
+const endPage = `<div class="pg-end"><span class="eyebrow">Ditt tak är näst</span><h3>Vill du ha ett resultat som det här?</h3><p style="color:#555">Skicka en förfrågan så kommer vi och tittar på taket – utan kostnad.</p><a class="btn btn-primary" href="#kontakt" style="align-self:flex-start">Begär offert</a></div>`;
+
+const book = document.getElementById('book');
+const fronts = [coverPage, ...projects.map(sliderPage)];
+const backs = [...projects.map(infoPage), endPage];
+const N = fronts.length;
+fronts.forEach((f, i) => book.insertAdjacentHTML('beforeend',
+  `<div class="leaf"><div class="face front${i===0?' cover':''}">${f}</div><div class="face back">${backs[i]}</div></div>`));
+const leaves = [...book.querySelectorAll('.leaf')];
+const prev = document.getElementById('prev'), next = document.getElementById('next'), pg = document.getElementById('pg');
+let cur = 0, zt;
+function setZ(){ leaves.forEach((l, i) => l.style.zIndex = i < cur ? i + 1 : N - i); }
+function apply(){
+  leaves.forEach((l, i) => l.classList.toggle('flipped', i < cur));
+  book.dataset.state = cur === 0 ? 'closed' : cur === N ? 'end' : 'open';
+  prev.disabled = cur === 0; next.disabled = cur === N;
+  pg.textContent = cur === 0 ? 'Omslag' : cur === N ? 'Slut' : `Projekt ${cur} av ${projects.length}`;
+}
+function go(d){
+  const n = cur + d; if (n < 0 || n > N) return;
+  leaves[d > 0 ? cur : n].style.zIndex = 100;
+  cur = n; apply(); clearTimeout(zt); zt = setTimeout(setZ, 900);
+}
+prev.onclick = () => go(-1); next.onclick = () => go(1);
+book.addEventListener('click', e => { if (e.target.closest('.cover') && cur === 0) go(1); });
+document.getElementById('bookStage').addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT') return;
+  if (e.key === 'ArrowRight') go(1); if (e.key === 'ArrowLeft') go(-1);
+});
+setZ(); apply();
+
+document.getElementById('cards').innerHTML = projects.map((p, i) =>
+  `<article class="pcard">${ba()}<div class="pc-body"><span class="eyebrow">Projekt 0${i+1} · ${p.area}</span><h3>${p.title}</h3><p>${p.text}</p></div></article>`).join('');
+
+// Hero-bild (demo). Ersätt med foto: document.querySelector('.hero').style.setProperty('--hero-img','url(hero.jpg)')
+(() => {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f95b8"/><stop offset="1" stop-color="#c9dbe8"/></linearGradient><pattern id="t" width="60" height="38" patternUnits="userSpaceOnUse"><rect width="60" height="38" fill="#a34419"/><path d="M0 37h60" stroke="#6f2c0f" stroke-width="3"/><path d="M30 0v37" stroke="#6f2c0f" stroke-width="2"/></pattern></defs><rect width="1200" height="600" fill="url(#s)"/><rect x="880" y="60" width="90" height="170" fill="#764033"/><polygon points="-20,600 -20,330 1220,170 1220,600" fill="url(#t)"/></svg>`;
+  document.querySelector('.hero').style.setProperty('--hero-img', `url("data:image/svg+xml,${encodeURIComponent(svg)}")`);
+})();
+
+const privacy = document.getElementById('privacy');
+document.getElementById('openPrivacy').addEventListener('click', () => privacy.showModal());
+document.getElementById('closePrivacy').addEventListener('click', () => privacy.close());
+privacy.addEventListener('click', e => { if (e.target === privacy) privacy.close(); });
+
+/* ---------- Kontakt: WhatsApp / e-post / enkel förfrågan ---------- */
+// Fyll i dina uppgifter här. endpoint = adressen till din Worker (se SETUP.md), t.ex. 'https://leads.dittnamn.workers.dev/lead'
+const CONFIG = {
+  whatsapp: '46700000000',          // landskod + nummer, utan + och mellanslag
+  email: 'info@foretagsnamn.se',
+  phone: '+46000000000',
+  endpoint: ''
+};
+const waText = 'Hej! Jag vill ha en offert på takarbete. Adress/stadsdel: ';
+const waUrl = t => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t || waText)}`;
+const mailUrl = () => `mailto:${CONFIG.email}?subject=${encodeURIComponent('Offertförfrågan – tak')}&body=${encodeURIComponent('Hej!\n\nJag vill ha en offert på:\nAdress/stadsdel:\nTelefon:\n\n(Bifoga gärna bilder på taket)')}`;
+['waBtn','fabWa'].forEach(id => document.getElementById(id).href = waUrl());
+document.getElementById('mailBtn').href = mailUrl();
+['telBtn','fabTel'].forEach(id => document.getElementById(id).href = 'tel:' + CONFIG.phone);
+
+document.getElementById('form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const f = e.target, ok = document.getElementById('ok'), err = document.getElementById('err');
+  ok.style.display = err.style.display = 'none';
+  if (f.website.value) return;                       // honeypot: bottar
+  const data = {
+    phone: f.phone.value.trim(),
+    service: (f.service.value || ''),
+    name: f.name.value.trim(),
+    page: location.href
+  };
+  const btn = f.querySelector('button[type=submit]'); btn.disabled = true;
+  try {
+    if (!CONFIG.endpoint) {                            // demo-läge tills Worker är kopplad
+      ok.textContent = 'Demo: formuläret är inte kopplat än, inget har skickats. Använd WhatsApp-knappen så länge.';
+      ok.style.display = 'block'; btn.disabled = false; return;
+    }
+    const r = await fetch(CONFIG.endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(data)});
+    if (!r.ok) throw new Error(r.status);
+    ok.style.display = 'block'; f.reset();
+  } catch (x) {
+    console.warn('Förfrågan kunde inte skickas:', x.message);
+    err.style.display = 'block';
+    err.innerHTML = 'Något gick fel. Skriv till oss på WhatsApp eller ring så hjälper vi dig direkt.' + ` <a href="${waUrl(`Hej! Ring mig på ${data.phone}. ${data.service}`)}" target="_blank" rel="noopener" style="text-decoration:underline">Öppna WhatsApp</a>`;
+  } finally { btn.disabled = false; }
+});
+
+/* ---------- Text som glider in från sidan vid scroll ---------- */
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const sel = '.section-head, .grid.services .card, .why-item, .step, .city, .rural, .faq details, .cta-band .wrap > *, .contact-info, #form, .pcard';
+  const items = [...document.querySelectorAll(sel)];
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+  items.forEach(el => {
+    const sibs = [...el.parentElement.children].filter(c => c.matches(sel));
+    const i = sibs.indexOf(el);
+    el.classList.add('rv');
+    if (el.matches('#form, .cta-band .wrap > a') || i % 2 === 1) el.classList.add('from-r');
+    el.style.transitionDelay = (Math.floor(i / 2) * 90) + 'ms';
+  });
+  document.documentElement.classList.add('anim');
+  items.forEach(el => io.observe(el));
+}
+</script>
+
+
+</body></html>
